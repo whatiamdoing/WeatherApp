@@ -24,12 +24,12 @@ object NetworkModule {
     fun provideRetrofit(): Retrofit {
         val loginInterceptor = HttpLoggingInterceptor()
         loginInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
-        val okHttpClient = with(OkHttpClient.Builder()){
+        val okHttpClient = with(OkHttpClient.Builder()) {
             addInterceptor(loginInterceptor)
             build()
         }
 
-        return with(Retrofit.Builder()){
+        return with(Retrofit.Builder()) {
             baseUrl(BASE_URL)
             addConverterFactory(GsonConverterFactory.create())
             client(okHttpClient)

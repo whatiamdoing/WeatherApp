@@ -7,7 +7,7 @@ import com.whatiamdoing.weather.di.module.SharedPreferencesModule
 
 class App: Application() {
 
-    companion object{
+    companion object {
         lateinit var appComponent: AppComponent
     }
 
