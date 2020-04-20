@@ -8,7 +8,14 @@ object Constants {
     }
 
     object SharedPref {
-       const val PREF_KEY_WEATHER = "weather"
+        const val PREF_KEY_WEATHER = "weather"
+        const val PREF_LOCATION = "location"
+        const val PREF_LAT = "lat"
+        const val PREF_LONG = "long"
+    }
+
+    object Others {
+        const val REQUEST_CODE = 100
     }
 
 }
