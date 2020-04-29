@@ -23,7 +23,4 @@ interface MainView: MvpView {
     @StateStrategyType(SkipStrategy::class)
     fun getCurrentLocation()
 
-    @StateStrategyType(SkipStrategy::class)
-    fun saveDataInPrefs(lat: Float, long: Float)
-
 }
