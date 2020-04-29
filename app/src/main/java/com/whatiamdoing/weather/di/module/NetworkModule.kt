@@ -1,6 +1,6 @@
 package com.whatiamdoing.weather.di.module
 
-import com.whatiamdoing.weather.di.network.ApiService
+import com.whatiamdoing.weather.network.ApiService
 import com.whatiamdoing.weather.utils.Constants.Api.BASE_URL
 import dagger.Module
 import dagger.Provides
