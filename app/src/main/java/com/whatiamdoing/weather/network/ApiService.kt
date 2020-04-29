@@ -1,4 +1,4 @@
-package com.whatiamdoing.weather.di.network
+package com.whatiamdoing.weather.network
 
 import com.whatiamdoing.weather.data.CurrentWeatherEntity
 import com.whatiamdoing.weather.utils.Constants.Api.API_KEY
