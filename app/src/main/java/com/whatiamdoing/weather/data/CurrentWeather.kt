@@ -1,38 +1,14 @@
 package com.whatiamdoing.weather.data
 
-import com.google.gson.annotations.Expose
-import com.google.gson.annotations.SerializedName
-
 data class CurrentWeather(
-    @SerializedName("temperature")
-    @Expose
     val temperature: Int,
-    @Expose
-    @SerializedName("pressure")
     val pressure: Int,
-    @SerializedName("weather_descriptions")
-    @Expose
-    val weatherDescriptions: List<String>,
-    @SerializedName("observation_time")
-    @Expose
-    val observationTime: String,
-    @SerializedName("humidity")
-    @Expose
+    val weather_descriptions: List<String>,
+    val observation_time: String,
     val humidity: Int,
-    @SerializedName("wind_speed")
-    @Expose
-    val windSpeed: Int,
-    @SerializedName("cloudcover")
-    @Expose
-    val cloudCover: Int,
-    @SerializedName("weather_code")
-    @Expose
-    val weatherCode: Int,
-    @SerializedName("feelslike")
-    @Expose
-    val feels_like: Int,
-    @SerializedName("visibility")
-    @Expose
+    val wind_speed: Int,
+    val cloudcover: Int,
+    val weather_code: Int,
+    val feelslike: Int,
     val visibility: Int
-
 )

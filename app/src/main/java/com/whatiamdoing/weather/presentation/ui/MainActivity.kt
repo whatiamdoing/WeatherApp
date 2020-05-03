@@ -59,20 +59,20 @@ class MainActivity : MvpAppCompatActivity(), MainView {
         )
         tv_observationTime.text = resources.getString(
                 R.string.observation_time,
-                data.current.observationTime
+                data.current.observation_time
             )
-        tv_currentWeather.text = data.current.weatherDescriptions.getOrNull(0)
+        tv_currentWeather.text = data.current.weather_descriptions.getOrNull(0)
         tv_temperature.text = resources.getString(
             R.string.temperature,
             data.current.temperature
         )
         tv_cloud.text = getString(
             R.string.cloud_cover,
-            data.current.cloudCover
+            data.current.cloudcover
         )
         tv_windSpeed.text = getString(
             R.string.wind_speed,
-            data.current.windSpeed
+            data.current.wind_speed
         )
         tv_humidity.text = getString(
             R.string.humidity,
@@ -88,11 +88,11 @@ class MainActivity : MvpAppCompatActivity(), MainView {
         )
         tv_feelsLike.text = getString(
             R.string.feels_like,
-            data.current.feels_like
+            data.current.feelslike
         )
         Glide.with(this).load(
             weatherCodeToImage(
-                data.current.weatherCode
+                data.current.weather_code
             )
         ).centerCrop()
             .into(iv_weatherIcon)

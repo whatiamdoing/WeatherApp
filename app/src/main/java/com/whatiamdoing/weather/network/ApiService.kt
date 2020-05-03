@@ -19,21 +19,4 @@ interface ApiService {
         @Query("query") query: String
     ): Response<CurrentWeatherEntity>
 
-    companion object {
-        operator fun invoke(): ApiService = retrofitCall
-
-        private val retrofitCall = with(Retrofit.Builder()) {
-            val loginInterceptor = HttpLoggingInterceptor()
-            loginInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
-            val okHttpClient = with(OkHttpClient.Builder()) {
-                addInterceptor(loginInterceptor)
-                build()
-            }
-            baseUrl(BASE_URL)
-            addConverterFactory(GsonConverterFactory.create())
-            client(okHttpClient)
-            build()
-        }.create(ApiService::class.java)
-    }
-
 }

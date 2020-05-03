@@ -2,6 +2,7 @@ package com.whatiamdoing.weather.di
 
 import android.app.Application
 import com.whatiamdoing.weather.di.module.ContextModule
+import com.whatiamdoing.weather.di.module.NetworkModule
 import com.whatiamdoing.weather.di.module.SharedPreferencesModule
 
 class App: Application() {
@@ -19,6 +20,7 @@ class App: Application() {
         appComponent = with(DaggerAppComponent.builder()) {
             sharedPreferencesModule(SharedPreferencesModule)
             contextModule(ContextModule(applicationContext))
+            networkModule(NetworkModule)
         }.build()
     }
 }
