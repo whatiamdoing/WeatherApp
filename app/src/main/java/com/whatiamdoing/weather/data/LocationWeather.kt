@@ -9,5 +9,8 @@ data class LocationWeather(
     val name: String,
     @SerializedName("country")
     @Expose
-    val country: String
+    val country: String,
+    @SerializedName("region")
+    @Expose
+    val region: String
 )
