@@ -14,6 +14,7 @@ import android.provider.Settings
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
+import com.faltenreich.skeletonlayout.Skeleton
 import com.google.android.gms.location.*
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.whatiamdoing.weather.R
@@ -37,11 +38,14 @@ class MainActivity : MvpAppCompatActivity(), MainView {
     lateinit var fusedLocationProviderClient: FusedLocationProviderClient
     @Inject
     lateinit var sharedPreference: SharedPreference
+    lateinit var skeleton: Skeleton
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        skeleton = skeleton_layout
+        skeleton.showSkeleton()
         App.appComponent.inject(this)
         swipeRefresh.setOnRefreshListener { requestLocation() }
     }
@@ -92,6 +96,7 @@ class MainActivity : MvpAppCompatActivity(), MainView {
             )
         ).centerCrop()
             .into(iv_weatherIcon)
+        skeleton.showOriginal()
     }
 
     override fun showProgressBar() = with(swipeRefresh) { isRefreshing = true }
