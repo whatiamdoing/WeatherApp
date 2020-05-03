@@ -1,16 +1,16 @@
 <resources>
     <string name="app_name">Weather</string>
     <string name="observation_time">Observation time: %s</string>
-    <string name="name_country">%s, %s, %s</string>
-    <string name="temperature">%d℃</string>
+    <string name="name_country" translatable="false">%s, %s, %s</string>
+    <string name="temperature" translatable="false">%d℃</string>
     <string name="pressure">Pressure: %d mmHg</string>
     <string name="humidity">Humidity: %d%%</string>
     <string name="error">There seems to be no internet connection, please try again later.</string>
-    <string name="update">OK</string>
+    <string name="update" translatable="false">OK</string>
     <string name="error_title">Error</string>
     <string name="wind_speed">Wind speed: %d k/h</string>
     <string name="cloud_cover">Overcast: %d%%</string>
     <string name="feels_like">Feels like: %d℃</string>
     <string name="visibility">Visibility: %d</string>
-    <string name="weatherIcon">weatherIcon</string>
+    <string name="weatherIcon" translatable="false">weatherIcon</string>
 </resources>

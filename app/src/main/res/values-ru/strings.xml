@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Погода</string>
+    <string name="observation_time">Время наблюдения: %s</string>
+    <string name="pressure">Давление: %d mmHg</string>
+    <string name="humidity">Влажность: %d%%</string>
+    <string name="error">Кажется, нет подключения к интернету, пожалуйста, попробуйте позже.</string>
+    <string name="error_title">Ошибка</string>
+    <string name="wind_speed">Скорость ветра: %d k/h</string>
+    <string name="cloud_cover">Облачность: %d%%</string>
+    <string name="feels_like">Ощущается как: %d℃</string>
+    <string name="visibility">Видимость: %d</string>
+</resources>
