@@ -27,6 +27,12 @@ data class CurrentWeather(
     val cloudCover: Int,
     @SerializedName("weather_code")
     @Expose
-    val weatherCode: Int
+    val weatherCode: Int,
+    @SerializedName("feelslike")
+    @Expose
+    val feels_like: Int,
+    @SerializedName("visibility")
+    @Expose
+    val visibility: Int
 
 )

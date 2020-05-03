@@ -23,7 +23,6 @@ import com.whatiamdoing.weather.presentation.presenter.MainPresenter
 import com.whatiamdoing.weather.utils.Constants.Others.REQUEST_CODE
 import com.whatiamdoing.weather.utils.Constants.SharedPref.PREF_LAT
 import com.whatiamdoing.weather.utils.Constants.SharedPref.PREF_LOCATION
-import com.whatiamdoing.weather.utils.Constants.SharedPref.PREF_LONG
 import com.whatiamdoing.weather.utils.SharedPreference
 import com.whatiamdoing.weather.utils.weatherCodeToImage
 import kotlinx.android.synthetic.main.activity_main.*
@@ -50,15 +49,43 @@ class MainActivity : MvpAppCompatActivity(), MainView {
     override fun setData(data: CurrentWeatherEntity) {
         tv_locationName.text = resources.getString(
             R.string.name_country,
-            data.location.name,
-            data.location.country
+            data.location.country,
+            data.location.region,
+            data.location.name
         )
-        tv_observationTime.text =
-            resources.getString(R.string.observation_time, data.current.observationTime)
-
+        tv_observationTime.text = resources.getString(
+                R.string.observation_time,
+                data.current.observationTime
+            )
         tv_currentWeather.text = data.current.weatherDescriptions.getOrNull(0)
-        tv_temperature.text =
-            resources.getString(R.string.temperature, data.current.temperature)
+        tv_temperature.text = resources.getString(
+            R.string.temperature,
+            data.current.temperature
+        )
+        tv_cloud.text = getString(
+            R.string.cloud_cover,
+            data.current.cloudCover
+        )
+        tv_windSpeed.text = getString(
+            R.string.wind_speed,
+            data.current.windSpeed
+        )
+        tv_humidity.text = getString(
+            R.string.humidity,
+            data.current.humidity
+        )
+        tv_pressure.text = getString(
+            R.string.pressure,
+            data.current.pressure
+        )
+        tv_visibility.text = getString(
+            R.string.visibility,
+            data.current.visibility
+        )
+        tv_feelsLike.text = getString(
+            R.string.feels_like,
+            data.current.feels_like
+        )
         Glide.with(this).load(
             weatherCodeToImage(
                 data.current.weatherCode
