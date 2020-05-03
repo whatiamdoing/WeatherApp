@@ -97,6 +97,9 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
 
     // Layout
-    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-beta01'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-rc01'
+
+    //Skeleton
+    implementation 'com.faltenreich:skeletonlayout:2.0.1'
 
 }
