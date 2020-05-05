@@ -3,14 +3,14 @@
     <string name="observation_time">Observation time: %s</string>
     <string name="name_country" translatable="false">%s, %s, %s</string>
     <string name="temperature" translatable="false">%d℃</string>
-    <string name="pressure">Pressure: %d mmHg</string>
-    <string name="humidity">Humidity: %d%%</string>
+    <string name="pressure"><![CDATA[<b>Pressure:</b>]]> %d mmHg</string>
+    <string name="humidity"><![CDATA[<b>Humidity:</b>]]> %d%%</string>
     <string name="error">There seems to be no internet connection, please try again later.</string>
     <string name="update" translatable="false">OK</string>
     <string name="error_title">Error</string>
-    <string name="wind_speed">Wind speed: %d k/h</string>
-    <string name="cloud_cover">Overcast: %d%%</string>
-    <string name="feels_like">Feels like: %d℃</string>
-    <string name="visibility">Visibility: %d</string>
+    <string name="wind_speed"><![CDATA[<b>Wind speed:</b>]]> %d k/h</string>
+    <string name="cloud_cover"><![CDATA[<b>Overcast:</b>]]> %d%%</string>
+    <string name="feels_like"><![CDATA[<b>Feels like:</b>]]> %d℃</string>
+    <string name="visibility"><![CDATA[<b>Visibility:</b>]]> %d</string>
     <string name="weatherIcon" translatable="false">weatherIcon</string>
 </resources>

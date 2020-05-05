@@ -11,6 +11,7 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Looper
 import android.provider.Settings
+import android.text.Html
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
@@ -66,29 +67,47 @@ class MainActivity : MvpAppCompatActivity(), MainView {
             R.string.temperature,
             data.current.temperature
         )
-        tv_cloud.text = getString(
-            R.string.cloud_cover,
-            data.current.cloudcover
+        tv_cloud.text = Html.fromHtml(
+            getString(
+                R.string.cloud_cover,
+                data.current.cloudcover
+            )
         )
-        tv_windSpeed.text = getString(
-            R.string.wind_speed,
-            data.current.wind_speed
+        tv_windSpeed.text = Html.fromHtml(
+            getString(
+                R.string.wind_speed,
+                data.current.wind_speed
+            )
         )
-        tv_humidity.text = getString(
-            R.string.humidity,
-            data.current.humidity
+        tv_humidity.text = Html.fromHtml(
+            getString(
+                R.string.humidity,
+                data.current.humidity
+            )
         )
-        tv_pressure.text = getString(
-            R.string.pressure,
-            data.current.pressure
+        tv_pressure.text = Html.fromHtml(
+            getString(
+                R.string.pressure,
+                data.current.pressure
+            )
         )
-        tv_visibility.text = getString(
-            R.string.visibility,
-            data.current.visibility
+        tv_pressure.text = Html.fromHtml(
+            getString(
+                R.string.pressure,
+                data.current.pressure
+            )
         )
-        tv_feelsLike.text = getString(
-            R.string.feels_like,
-            data.current.feelslike
+        tv_visibility.text = Html.fromHtml(
+            getString(
+                R.string.visibility,
+                data.current.visibility
+            )
+        )
+        tv_feelsLike.text = Html.fromHtml(
+            getString(
+                R.string.feels_like,
+                data.current.feelslike
+            )
         )
         Glide.with(this).load(
             weatherCodeToImage(

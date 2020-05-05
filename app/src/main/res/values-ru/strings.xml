@@ -2,12 +2,12 @@
 <resources>
     <string name="app_name">Погода</string>
     <string name="observation_time">Время наблюдения: %s</string>
-    <string name="pressure">Давление: %d mmHg</string>
-    <string name="humidity">Влажность: %d%%</string>
+    <string name="pressure"><![CDATA[<b>Давление:</b>]]> %d mmHg</string>
+    <string name="humidity"><![CDATA[<b>Влажность:</b>]]> %d%%</string>
     <string name="error">Кажется, нет подключения к интернету, пожалуйста, попробуйте позже.</string>
     <string name="error_title">Ошибка</string>
-    <string name="wind_speed">Скорость ветра: %d k/h</string>
-    <string name="cloud_cover">Облачность: %d%%</string>
-    <string name="feels_like">Ощущается как: %d℃</string>
-    <string name="visibility">Видимость: %d</string>
+    <string name="wind_speed"><![CDATA[<b>Скорость ветра:</b>]]> %d k/h</string>
+    <string name="cloud_cover"><![CDATA[<b>Облачность:</b>]]> %d%%</string>
+    <string name="feels_like"><![CDATA[<b>Ощущается как:</b>]]> %d℃</string>
+    <string name="visibility"><![CDATA[<b>Видимость:</b>]]> %d</string>
 </resources>

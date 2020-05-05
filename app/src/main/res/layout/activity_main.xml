@@ -25,11 +25,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
-                android:gravity="center"
                 android:textSize="22sp"
                 android:text="Russia"
+                android:gravity="center"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/spacing_huge_32"
                 android:textColor="@android:color/black"
                 android:textStyle="bold"
                 android:layout_above="@id/tv_observationTime"
@@ -89,18 +88,20 @@
 
                 <TextView
                     android:id="@+id/tv_pressure"
-                    android:text="@string/pressure"
-                    android:textSize="18sp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/spacing_small_8"
+                    android:text="@string/pressure"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/tv_humidity"
                     android:text="@string/humidity"
                     android:textSize="18sp"
                     android:layout_width="0dp"
+                    android:layout_marginEnd="8dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
@@ -122,6 +123,7 @@
                     android:textSize="18sp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_small_8"
                     android:layout_weight="1"
                     android:gravity="center"/>
 
@@ -131,6 +133,7 @@
                     android:textSize="18sp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_small_8"
                     android:layout_weight="1"
                     android:gravity="center"
                     />
@@ -151,6 +154,7 @@
                     android:textSize="18sp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_small_8"
                     android:layout_weight="1"
                     android:gravity="center"/>
 
@@ -160,6 +164,7 @@
                     android:textSize="18sp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_small_8"
                     android:layout_weight="1"
                     android:gravity="center"
                     />
